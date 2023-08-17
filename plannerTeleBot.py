@@ -83,6 +83,7 @@ def see_note_handler(message):
                 bot.send_message(message.chat.id, f'<s>{index}. {task} - {status_str}</s>', parse_mode='html')
             else:
                 bot.send_message(message.chat.id, f'{index}. {task} - {status_str}')
+                print("hello world")
 
 
 bot.polling(none_stop=True)
